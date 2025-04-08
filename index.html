@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HFM - Heritage for Myanmar</title>
+    <title>HFM - Rescue Myanmar's Heritage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -115,35 +115,6 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
-        .download-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 10px 16px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .pdf-download {
-            background-color: #f1f1f1;
-            border: 1px solid #ddd;
-            padding: 12px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-        }
-        
-        .pdf-download:hover {
-            background-color: #e9e9e9;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
         @media (max-width: 768px) {
             .language-toggle {
                 top: 10px;
@@ -163,7 +134,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1589998059171-988d322b03dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1599403275295-57bca684efd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
         <div class="text-center px-4">
             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-on-scroll">
                 <span class="english-text">Rescue Myanmar's Heritage</span>
@@ -175,5 +146,417 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll" style="animation-delay: 0.4s;">
                 <a href="#involved" class="btn-highlight font-bold py-3 px-6 rounded-lg">
-                    <span class="english-text">Get
+                    <span class="english-text">Get Involved</span>
+                    <span class="burmese-text hidden burmese">ပါဝင်ဆောင်ရွက်ပါ</span>
+                </a>
+                <a href="#about" class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-[#333333] transition">
+                    <span class="english-text">Learn More</span>
+                    <span class="burmese-text hidden burmese">ပိုမိုလေ့လာပါ</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Blocks Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- About Us Block -->
+                <a href="#about" class="nav-block bg-[#F9F5EF] p-8 rounded-xl shadow-md hover:shadow-lg animate-on-scroll">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(46, 139, 87, 0.1);">
+                        <i class="fas fa-info-circle text-3xl text-[#2E8B57]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#333333]">
+                        <span class="english-text">About Us</span>
+                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့အကြောင်း</span>
+                    </h3>
+                    <p class="text-[#555555] mb-6">
+                        <span class="english-text">Learn about our organization and what drives our mission to protect Myanmar's heritage</span>
+                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏အဖွဲ့အစည်းနှင့် မြန်မာ့အမွေအနှစ်ကိုကာကွယ်ရန် ကျွန်ုပ်တို့၏ရည်မှန်းချက်အကြောင်းလေ့လာပါ</span>
+                    </p>
+                    <div class="flex items-center text-[#2E8B57] font-semibold">
+                        <span class="english-text">Read more</span>
+                        <span class="burmese-text hidden burmese">ဆက်လက်ဖတ်ရှုပါ</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+                
+                <!-- Our Mission Block -->
+                <a href="#mission" class="nav-block bg-[#F9F5EF] p-8 rounded-xl shadow-md hover:shadow-lg animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(212, 175, 55, 0.1);">
+                        <i class="fas fa-bullseye text-3xl text-[#D4AF37]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#333333]">
+                        <span class="english-text">Our Mission</span>
+                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏ရည်မှန်းချက်</span>
+                    </h3>
+                    <p class="text-[#555555] mb-6">
+                        <span class="english-text">Discover our three-pronged approach to heritage preservation</span>
+                        <span class="burmese-text hidden burmese">အမွေအနှစ်ထိန်းသိမ်းရေးအတွက် ကျွန်ုပ်တို့၏သုံးဖက်မြင်ချဉ်းကပ်မှုကိုရှာဖွေပါ</span>
+                    </p>
+                    <div class="flex items-center text-[#D4AF37] font-semibold">
+                        <span class="english-text">Explore</span>
+                        <span class="burmese-text hidden burmese">စူးစမ်းပါ</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+                
+                <!-- Get Involved Block -->
+                <a href="#involved" class="nav-block bg-[#F9F5EF] p-8 rounded-xl shadow-md hover:shadow-lg animate-on-scroll" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(139, 64, 0, 0.1);">
+                        <i class="fas fa-hands-helping text-3xl text-[#8B4000]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#333333]">
+                        <span class="english-text">Get Involved</span>
+                        <span class="burmese-text hidden burmese">ပါဝင်ဆောင်ရွက်ပါ</span>
+                    </h3>
+                    <p class="text-[#555555] mb-6">
+                        <span class="english-text">Find out how you can contribute to protecting Myanmar's cultural heritage</span>
+                        <span class="burmese-text hidden burmese">မြန်မာ့ယဉ်ကျေးမှုအမွေအနှစ်ကိုကာကွယ်ရာတွင်သင်မည်သို့ပါဝင်နိုင်သည်ကိုရှာဖွေပါ</span>
+                    </p>
+                    <div class="flex items-center text-[#8B4000] font-semibold">
+                        <span class="english-text">Join us</span>
+                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့နှင့်ပူးပေါင်းပါ</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-[#F9F5EF] section-border">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 animate-on-scroll">
+                    <h2 class="text-3xl font-bold mb-6">
+                        <span class="english-text">About Heritage First Myanmar</span>
+                        <span class="burmese-text hidden burmese">Heritage First Myanmar အကြောင်း</span>
+                    </h2>
+                    <p class="mb-4 text-[#555555]">
+                        <span class="english-text">Heritage First Myanmar (HFM) is a rapid response initiative dedicated to protecting Myanmar's cultural heritage during times of crisis.</span>
+                        <span class="burmese-text hidden burmese">Heritage First Myanmar (HFM) သည် အရေးပေါ်အခြေအနေများအတွင်း မြန်မာနိုင်ငံ၏ယဉ်ကျေးမှုအမွေအနှစ်များကိုကာကွယ်ရန်အတွက် အမြန်တုံ့ပြန်ဆောင်ရွက်သည့်အစီအစဉ်တစ်ခုဖြစ်သည်။</span>
+                    </p>
+                    <p class="mb-6 text-[#555555]">
+                        <span class="english-text">Our network of trained responders works with local communities to document damage, stabilize at-risk sites, and prepare for restoration when conditions allow.</span>
+                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏ကျွမ်းကျင်သောတုံ့ပြန်သူများကွန်ရက်သည် ပျက်စီးမှုများကိုမှတ်တမ်းတင်ရန်၊ အန္တရာယ်ရှိသောနေရာများကိုတည်ငြိမ်စေရန်နှင့် အခြေအနေများခွင့်ပြုသည့်အခါ ပြန်လည်ပြုပြင်ရန်ပြင်ဆင်ရန်အတွက် ဒေသခံအသိုင်းအဝိုင်းများနှင့်ပူးပေါင်းဆောင်ရွက်သည်။</span>
+                    </p>
+                    <a href="#mission" class="btn-primary font-bold py-3 px-6 rounded-lg inline-block">
+                        <span class="english-text">Our Mission</span>
+                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏ရည်မှန်းချက်</span>
+                    </a>
+                </div>
+                <div class="md:w-1/2 animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1566378246598-5b11a0d486cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Myanmar temple" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1589307004173-abe6a2bff512?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Myanmar artifacts" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e05a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Restoration work" class="w-full h-full object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Community meeting" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-16 bg-white section-border">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 animate-on-scroll">
+                <span class="english-text">Our Three-Pronged Approach</span>
+                <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏သုံးဖက်မြင်ချဉ်းကပ်မှု</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="text-center animate-on-scroll">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(212, 175, 55, 0.1); color: var(--highlight);">
+                        <i class="fas fa-camera-retro text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#333333]">
+                        <span class="english-text">Document</span>
+                        <span class="burmese-text hidden burmese">မှတ်တမ်းတင်ပါ</span>
+                    </h3>
+                    <p class="text-[#555555]">
+                        <span class="english-text">Create comprehensive records of heritage sites through photography, 3D scanning, and condition reports.</span>
+                        <span class="burmese-text hidden burmese">ဓာတ်ပုံများ၊ 3D စကင်ဖတ်ခြင်းနှင့် အခြေအနေအစီရင်ခံစာများမှတစ်ဆင့် အမွေအနှစ်နေရာများ၏ပြည့်စုံသောမှတ်တမ်းများကိုဖန်တီးပါ။</span>
+                    </p>
+                </div>
+                
+                <div class="text-center animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(46, 139, 87, 0.1); color: var(--accent);">
+                        <i class="fas fa-shield-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#333333]">
+                        <span class="english-text">Protect</span>
+                        <span class="burmese-text hidden burmese">ကာကွယ်ပါ</span>
+                    </h3>
+                    <p class="text-[#555555]">
+                        <span class="english-text">Implement emergency measures to stabilize structures and prevent further damage.</span>
+                        <span class="burmese-text hidden burmese">အဆောက်အဦများကိုတည်ငြိမ်စေရန်နှင့် နောက်ထပ်ပျက်စီးမှုကိုကာကွယ်ရန် အရေးပေါ်အစီအမျများကိုအကောင်အထည်ဖော်ပါ။</span>
+                    </p>
+                </div>
+                
+                <div class="text-center animate-on-scroll" style="animation-delay: 0.4s;">
+                    <div class="w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(139, 64, 0, 0.1); color: var(--links);">
+                        <i class="fas fa-hammer text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-[#333333]">
+                        <span class="english-text">Restore</span>
+                        <span class="burmese-text hidden burmese">ပြန်လည်ပြုပြင်ပါ</span>
+                    </h3>
+                    <p class="text-[#555555]">
+                        <span class="english-text">Plan and execute careful restoration using traditional techniques and materials.</span>
+                        <span class="burmese-text hidden burmese">ရိုးရာနည်းလမ်းများနှင့်ပစ္စည်းများကိုအသုံးပြု၍ ဂရုတစိုက်ပြန်လည်ပြုပြင်ရေးအစီအစဉ်ရေးဆွဲပါ။</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="involved" class="py-16 bg-[#F9F5EF] section-border">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#333333] animate-on-scroll">
+                <span class="english-text">Get Involved</span>
+                <span class="burmese-text hidden burmese">ပါဝင်ဆောင်ရွက်ပါ</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Volunteer -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition animate-on-scroll h-full">
+                    <div class="button-container">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(212, 175, 55, 0.1); color: var(--highlight);">
+                            <i class="fas fa-hands-helping text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-center text-[#333333]">
+                            <span class="english-text">Volunteer Sign-up</span>
+                            <span class="burmese-text hidden burmese">စေတနာ့ဝန်ထမ်းမှတ်ပုံတင်ခြင်း</span>
+                        </h3>
+                        <p class="mb-4 text-[#555555] text-center">
+                            <span class="english-text">Join our team of heritage responders in the field or support remotely</span>
+                            <span class="burmese-text hidden burmese">မြေပြင်တွင်ဖြစ်စေ၊ အဝေးမှဖြစ်စေ ကျွန်ုပ်တို့၏အမွေအနှစ်ကာကွယ်ရေးအဖွဲ့တွင်ပါဝင်ပါ</span>
+                        </p>
+                        <button class="btn-highlight font-bold py-3 px-6 rounded-lg">
+                            <span class="english-text">Volunteer Now</span>
+                            <span class="burmese-text hidden burmese">ယခုပါဝင်ပါ</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Partner -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition animate-on-scroll h-full">
+                    <div class="button-container">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(46, 139, 87, 0.1); color: var(--accent);">
+                            <i class="fas fa-handshake text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-center text-[#333333]">
+                            <span class="english-text">Partner With Us</span>
+                            <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့နှင့်ပူးပေါင်းပါ</span>
+                        </h3>
+                        <p class="mb-4 text-[#555555] text-center">
+                            <span class="english-text">For NGOs, academic institutions, and heritage experts</span>
+                            <span class="burmese-text hidden burmese">အစိုးရမဟုတ်သောအဖွဲ့အစည်းများ၊ ပညာရေးအဖွဲ့အစည်းများနှင့် အမွေအနှစ်ကျွမ်းကျင်သူများအတွက်</span>
+                        </p>
+                        <button class="btn-primary font-bold py-3 px-6 rounded-lg">
+                            <span class="english-text">Contact Our Team</span>
+                            <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏အဖွဲ့နှင့်ဆက်သွယ်ပါ</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Donate -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition animate-on-scroll h-full">
+                    <div class="button-container">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(139, 64, 0, 0.1); color: var(--links);">
+                            <i class="fas fa-donate text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-center text-[#333333]">
+                            <span class="english-text">Donate</span>
+                            <span class="burmese-text hidden burmese">လှူဒါန်းပါ</span>
+                        </h3>
+                        <p class="mb-4 text-[#555555] text-center">
+                            <span class="english-text">Support restoration efforts and archaeological fieldwork</span>
+                            <span class="burmese-text hidden burmese">ပြန်လည်ပြုပြင်ရေးလုပ်ငန်းများနှင့် ရှေးဟောင်းသုတေသနလုပ်ငန်းများကိုထောက်ပံ့ပါ</span>
+                        </p>
+                        <button class="btn-links font-bold py-3 px-6 rounded-lg">
+                            <span class="english-text">Make a Donation</span>
+                            <span class="burmese-text hidden burmese">လှူဒါန်းရန်</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 animate-on-scroll">
+                <span class="english-text">Our Impact</span>
+                <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏အကျိုးသက်ရောက်မှု</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto animate-on-scroll">
+                <div class="text-center">
+                    <div class="text-5xl font-bold mb-2 text-[#2E8B57]">150+</div>
+                    <p class="text-[#555555]">
+                        <span class="english-text">Heritage sites documented</span>
+                        <span class="burmese-text hidden burmese">မှတ်တမ်းတင်ထားသောအမွေအနှစ်နေရာများ</span>
+                    </p>
+                </div>
+                
+                <div class="text-center animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="text-5xl font-bold mb-2 text-[#D4AF37]">40+</div>
+                    <p class="text-[#555555]">
+                        <span class="english-text">Emergency interventions</span>
+                        <span class="burmese-text hidden burmese">အရေးပေါ်ဝင်ရောက်စွက်ဖက်မှုများ</span>
+                    </p>
+                </div>
+                
+                <div class="text-center animate-on-scroll" style="animation-delay: 0.4s;">
+                    <div class="text-5xl font-bold mb-2 text-[#8B4000]">12</div>
+                    <p class="text-[#555555]">
+                        <span class="english-text">Restoration projects underway</span>
+                        <span class="burmese-text hidden burmese">ပြန်လည်ပြုပြင်ရေးစီမံကိန်းများလုပ်ဆောင်နေသည်</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#333333] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="animate-on-scroll">
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="english-text">Heritage First Myanmar</span>
+                        <span class="burmese-text hidden burmese">Heritage First Myanmar</span>
+                    </h3>
+                    <p class="text-[#CCCCCC]">
+                        <span class="english-text">Protecting Myanmar's cultural heritage during times of crisis.</span>
+                        <span class="burmese-text hidden burmese">အရေးပေါ်အခြေအနေများအတွင်း မြန်မာ့ယဉ်ကျေးမှုအမွေအနှစ်များကိုကာကွယ်ခြင်း။</span>
+                    </p>
+                </div>
+                
+                <div class="animate-on-scroll" style="animation-delay: 0.2s;">
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="english-text">Quick Links</span>
+                        <span class="burmese-text hidden burmese">အမြန်လင့်ခ်များ</span>
+                    </h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-[#CCCCCC] hover:text-white transition">
+                            <span class="english-text">About Us</span>
+                            <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့အကြောင်း</span>
+                        </a></li>
+                        <li><a href="#mission" class="text-[#CCCCCC] hover:text-white transition">
+                            <span class="english-text">Our Mission</span>
+                            <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏ရည်မှန်းချက်</span>
+                        </a></li>
+                        <li><a href="#involved" class="text-[#CCCCCC] hover:text-white transition">
+                            <span class="english-text">Get Involved</span>
+                            <span class="burmese-text hidden burmese">ပါဝင်ဆောင်ရွက်ပါ</span>
+                        </a></li>
+                    </ul>
+                </div>
+                
+                <div class="animate-on-scroll" style="animation-delay: 0.4s;">
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="english-text">Contact</span>
+                        <span class="burmese-text hidden burmese">ဆက်သွယ်ရန်</span>
+                    </h3>
+                    <ul class="space-y-2 text-[#CCCCCC]">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@heritagefirstmyanmar.org</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone"></i>
+                            <span>+95 1 234 5678</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                <span class="english-text">Yangon, Myanmar</span>
+                                <span class="burmese-text hidden burmese">ရန်ကုန်၊ မြန်မာ</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="animate-on-scroll" style="animation-delay: 0.6s;">
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="english-text">Follow Us</span>
+                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့ကိုလိုက်ပါ</span>
+                    </h3>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#555555] hover:bg-[#2E8B57] transition flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#555555] hover:bg-[#1DA1F2] transition flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#555555] hover:bg-[#2867B2] transition flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-[#555555] hover:bg-[#E1306C] transition flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#555555] mt-8 pt-8 text-center text-[#999999] animate-on-scroll">
+                <p>
+                    <span class="english-text">© 2023 Heritage First Myanmar. All rights reserved.</span>
+                    <span class="burmese-text hidden burmese">© ၂၀၂၃ Heritage First Myanmar။ အခွင့်အရေးအားလုံးရရှိပြီး။</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle
+        const languageToggle = document.getElementById('languageToggle');
+        const englishTexts = document.querySelectorAll('.english-text');
+        const burmeseTexts = document.querySelectorAll('.burmese-text');
+        
+        languageToggle.addEventListener('click', () => {
+            englishTexts.forEach(el => el.classList.toggle('hidden'));
+            burmeseTexts.forEach(el => el.classList.toggle('hidden'));
+            
+            // Toggle language indicator
+            const currentLang = document.querySelector('.language-toggle .english-text, .language-toggle .burmese-text:not(.hidden)');
+            if (currentLang.classList.contains('english-text')) {
+                currentLang.textContent = 'EN';
+            } else {
+                currentLang.textContent = 'မြန်မာ';
+            }
+        });
+        
+        // Scroll Animation
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+        
+        const checkIfInView = () => {
+            animateElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', checkIfInView);
+        window.addEventListener('load', checkIfInView);
+    </script>
+</body
 </html>
