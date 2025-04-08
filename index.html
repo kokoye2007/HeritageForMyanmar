@@ -115,12 +115,59 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
+        .download-card {
+            transition: all 0.3s ease;
+        }
+        
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .app-badge {
+            height: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .app-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            max-height: 500px;
+            padding-top: 1rem;
+        }
+        
         @media (max-width: 768px) {
             .language-toggle {
                 top: 10px;
                 right: 10px;
                 padding: 6px 10px;
                 font-size: 14px;
+            }
+            
+            .app-badge {
+                height: 40px;
             }
         }
     </style>
@@ -235,7 +282,7 @@
                     </h2>
                     <p class="mb-4 text-[#555555]">
                         <span class="english-text">Heritage for Myanmar (HFM) is a rapid response initiative dedicated to protecting Myanmar's cultural heritage during times of crisis. Our network of trained responders works with local communities to document damage, stabilize at-risk sites, and prepare for restoration when conditions allow. Through collaborative efforts, we aim to preserve Myanmar's rich cultural legacy for future generations while supporting communities in their recovery journey. </span>
-                        <span class="burmese-text hidden burmese">မြန်မာ့အမွေအနှစ် (Heritage for Myanmar - HFM) သည် အကျပ်အတည်းကာလများတွင် မြန်မာ့ယဉ်ကျေးမှုအမွေအနှစ်များကို ကာကွယ်ရန် အလျင်အမြန်တုံ့ပြန်ဆောင်ရွက်သော အစီအစဉ်တစ်ခုဖြစ်ပါသည်။ ကျွန်ုပ်တို့၏ လေ့ကျင့်ထားသော တုံ့ပြန်ဆောင်ရွက်သူများကွန်ရက်သည် ဒေသခံအသိုင်းအဝိုင်းများနှင့်အတူ ပျက်စီးမှုများကို မှတ်တမ်းတင်ခြင်း၊ အန္တရာယ်ရှိသော နေရာများကို တည်ငြိမ်စေခြင်းနှင့် အခြေအနေများက ခွင့်ပြုသည့်အခါ ပြန်လည်ထိန်းသိမ်းရန် ပြင်ဆင်ခြင်းတို့ကို ဆောင်ရွက်ပါသည်။ ပူးပေါင်းဆောင်ရွက်မှုများမှတဆင့်၊ ကျွန်ုပ်တို့သည် အသိုင်းအဝိုင်းများ၏ ပြန်လည်ထူထောင်ရေးခရီးစဉ်ကို ကူညီပံ့ပိုးပေးရင်း မြန်မာ့ကြွယ်ဝသော ယဉ်ကျေးမှုအမွေအနှစ်ကို နောင်လာမည့် မျိုးဆက်များအတွက် ထိန်းသိမ်းသွားရန် ရည်ရွယ်ပါသည်။</span>
+                        <span class="burmese-text hidden burmese">မြန်မာ့အမွေအနှစ် (Heritage for Myanmar - HFM) သည် အကျပ်အတည်းကာလများတွင် မြန်မာ့ယဉ်ကျေးမှုအမွေအနှစ်များကို ကာကွယ်ရန် အလျင်အမြန်တုံ့ပြန်ဆောင်ရွက်သော အစီအစဉ်တစ်ခုဖြစ်ပါသည်။ ကျွန်ုပ်တို့၏ လေ့ကျင့်ထားသော တုံ့ပြန်ဆောင်ရွက်သူများကွန်ရက်သည် ဒေသခံအသိုင်းအဝိုင်းများနှင့်အတူ ပျက်စီးမှုများကို မှတ်တမ်းတင်ခြင်း၊ အန္တရာယ်ရှိသော နေရာများကို တည်ငြိမ်စေခြင်းနှင့် အခြေအနေများက ခွင့်ပြုသည့်အခါ ပြန်လည်ထိန်းသိမ်းရန် ပြင်ဆင်ခြင်းတို့ကို ဆောင်ရွက်ပါသည်။ ပူးပေါင်းဆောင်ရွက်မှုများမှတဆင့်၊ ကျွန်ုပ်တို့သည် အသိုင်းအဝိုင်းများ၏ ပြန်လည်ထူထောင်ရေးခရီးစဉ်ကို ကူညီပံ့ပိုးပေးရင်း မြန်မာ့ကြွယ်ဝသော ယဉ်ကျေးမှုအမွေအနှစ်�ကို နောင်လာမည့် မျိုးဆက်များအတွက် ထိန်းသိမ်းသွားရန် ရည်ရွယ်ပါသည်။</span>
                     </p>
                     <p class="mb-6 text-[#555555]">
                         <span class="english-text">Our network of trained responders works with local communities to document damage, stabilize at-risk sites, and prepare for restoration when conditions allow.</span>
@@ -315,6 +362,239 @@
                         <span class="english-text">Plan and execute careful restoration using traditional techniques and materials.</span>
                         <span class="burmese-text hidden burmese">ရိုးရာနည်းလမ်းများနှင့်ပစ္စည်းများကိုအသုံးပြု၍ ဂရုတစိုက်ပြန်လည်ပြုပြင်ရေးအစီအစဉ်ရေးဆွဲပါ။</span>
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-16 bg-[#F9F5EF] section-border">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 animate-on-scroll">
+                <span class="english-text">Resources & Downloads</span>
+                <span class="burmese-text hidden burmese">အရင်းအမြစ်များနှင့် ဒေါင်းလုပ်များ</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Safety Protocol -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition download-card animate-on-scroll">
+                    <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(212, 175, 55, 0.1);">
+                        <i class="fas fa-file-pdf text-2xl text-[#D4AF37]"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-center text-[#333333]">
+                        <span class="english-text">Safety Protocol</span>
+                        <span class="burmese-text hidden burmese">လုံခြုံရေးစည်းမျဉ်း</span>
+                    </h3>
+                    <p class="mb-4 text-[#555555] text-center">
+                        <span class="english-text">Guidelines for safe documentation and protection of heritage sites</span>
+                        <span class="burmese-text hidden burmese">အမွေအနှစ်နေရာများ၏လုံခြုံစွာမှတ်တမ်းတင်ခြင်းနှင့်ကာကွယ်ခြင်းအတွက်လမ်းညွှန်ချက်များ</span>
+                    </p>
+                    <a href="Safety-Protocol-Burmese.pdf" download class="btn-highlight font-bold py-3 px-6 rounded-lg block text-center">
+                        <span class="english-text">Download PDF</span>
+                        <span class="burmese-text hidden burmese">PDF ဒေါင်းလုပ်လုပ်ပါ</span>
+                    </a>
+                </div>
+                
+                <!-- Application Guideline -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition download-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(46, 139, 87, 0.1);">
+                        <i class="fas fa-file-alt text-2xl text-[#2E8B57]"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-center text-[#333333]">
+                        <span class="english-text">Application Guideline</span>
+                        <span class="burmese-text hidden burmese">လျှောက်လွှာလမ်းညွှန်</span>
+                    </h3>
+                    <p class="mb-4 text-[#555555] text-center">
+                        <span class="english-text">Step-by-step instructions for submitting applications</span>
+                        <span class="burmese-text hidden burmese">လျှောက်လွှာများတင်သွင်းရန်အဆင့်ဆင့်ညွှန်ကြားချက်များ</span>
+                    </p>
+                    <a href="MAA-Application-guideline.pdf" download class="btn-primary font-bold py-3 px-6 rounded-lg block text-center">
+                        <span class="english-text">Download PDF</span>
+                        <span class="burmese-text hidden burmese">PDF ဒေါင်းလုပ်လုပ်ပါ</span>
+                    </a>
+                </div>
+                
+                <!-- Application Policy -->
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition download-card animate-on-scroll" style="animation-delay: 0.4s;">
+                    <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto" style="background-color: rgba(139, 64, 0, 0.1);">
+                        <i class="fas fa-file-contract text-2xl text-[#8B4000]"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-center text-[#333333]">
+                        <span class="english-text">Application Policy</span>
+                        <span class="burmese-text hidden burmese">လျှောက်လွှာမူဝါဒ</span>
+                    </h3>
+                    <p class="mb-4 text-[#555555] text-center">
+                        <span class="english-text">Official policies and requirements for applications</span>
+                        <span class="burmese-text hidden burmese">လျှောက်လွှာများအတွက်တရားဝင်မူဝါဒများနှင့်လိုအပ်ချက်များ</span>
+                    </p>
+                    <a href="Application-policy-Burmese.pdf" download class="btn-links font-bold py-3 px-6 rounded-lg block text-center">
+                        <span class="english-text">Download PDF</span>
+                        <span class="burmese-text hidden burmese">PDF ဒေါင်းလုပ်လုပ်ပါ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Section -->
+    <section class="py-16 bg-white section-border">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 animate-on-scroll">
+                    <h2 class="text-3xl font-bold mb-6">
+                        <span class="english-text">Mobile Data Collection</span>
+                        <span class="burmese-text hidden burmese">မိုဘိုင်းဒေတာစုဆောင်းခြင်း</span>
+                    </h2>
+                    <p class="mb-4 text-[#555555]">
+                        <span class="english-text">Use our mobile application to document heritage sites directly in the field. The app works with ODK Collect and provides an easy-to-use interface for capturing photos, GPS coordinates, and condition reports.</span>
+                        <span class="burmese-text hidden burmese">အမွေအနှစ်နေရာများကိုတိုက်ရိုက်မှတ်တမ်းတင်ရန်ကျွန်ုပ်တို့၏မိုဘိုင်းအက်ပ်ကိုအသုံးပြုပါ။ ဤအက်ပ်သည် ODK Collect နှင့်အလုပ်လုပ်ပြီး ဓာတ်ပုံများ၊ GPS ကိုဩဒိနိတ်များနှင့် အခြေအနေအစီရင်ခံစာများကိုဖမ်းယူရန် အသုံးပြုရလွယ်ကူသောအင်တာဖေ့စ်ကိုပေးသည်။</span>
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="https://play.google.com/store/apps/details?id=org.odk.collect.android" target="_blank" class="animate-on-scroll" style="animation-delay: 0.2s;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="app-badge">
+                        </a>
+                        <a href="https://github.com/getodk/collect/releases" target="_blank" class="animate-on-scroll" style="animation-delay: 0.3s;">
+                            <div class="bg-black text-white px-4 py-3 rounded-lg flex items-center app-badge">
+                                <i class="fas fa-download mr-2"></i>
+                                <span>Download APK</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1558655146-d6da6038e1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mobile data collection" class="w-full rounded-lg shadow-lg">
+                        <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-[#2E8B57] rounded-full flex items-center justify-center text-white mr-3">
+                                    <i class="fas fa-mobile-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold">
+                                        <span class="english-text">HFM Data Collection</span>
+                                        <span class="burmese-text hidden burmese">HFM ဒေတာစုဆောင်းခြင်း</span>
+                                    </div>
+                                    <div class="text-sm text-gray-500">
+                                        <span class="english-text">Available on Android</span>
+                                        <span class="burmese-text hidden burmese">Android တွင်ရရှိနိုင်ပါသည်</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Form Section -->
+    <section class="py-16 bg-[#F9F5EF] section-border">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 order-2 md:order-1 animate-on-scroll" style="animation-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Web form" class="w-full rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 animate-on-scroll">
+                    <h2 class="text-3xl font-bold mb-6">
+                        <span class="english-text">Online Submission Form</span>
+                        <span class="burmese-text hidden burmese">အွန်လိုင်းတင်သွင်းမှုပုံစံ</span>
+                    </h2>
+                    <p class="mb-4 text-[#555555]">
+                        <span class="english-text">Submit your heritage documentation and applications through our secure web form. The form is available in both English and Burmese and can be accessed from any device with internet connection.</span>
+                        <span class="burmese-text hidden burmese">သင့်အမွေအနှစ်မှတ်တမ်းတင်ခြင်းနှင့်လျှောက်လွှာများကိုကျွန်ုပ်တို့၏လုံခြုံသောဝဘ်ဖောင်မှတစ်ဆင့်တင်သွင်းပါ။ ဤဖောင်ကို အင်္ဂလိပ်နှင့်မြန်မာဘာသာနှစ်မျိုးလုံးတွင်ရရှိနိုင်ပြီး အင်တာနက်ချိတ်ဆက်မှုရှိသောမည်သည့်စက်မှမဆိုဝင်ရောက်နိုင်သည်။</span>
+                    </p>
+                    <a href="https://forms.example.com/hfm" target="_blank" class="btn-primary font-bold py-3 px-6 rounded-lg inline-block mt-6">
+                        <span class="english-text">Access Web Form</span>
+                        <span class="burmese-text hidden burmese">ဝဘ်ဖောင်ကိုဝင်ရောက်ပါ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 animate-on-scroll">
+                <span class="english-text">Frequently Asked Questions</span>
+                <span class="burmese-text hidden burmese">အမေးများသောမေးခွန်းများ</span>
+            </h2>
+            
+            <div class="space-y-6 animate-on-scroll">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">How do I install the MFH data collection app?</span>
+                        <span class="burmese-text hidden burmese">MFH ဒေတာစုဆောင်းမှုအက်ပ်ကိုမည်သို့တပ်ဆင်ရမည်နည်း။</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">You can install the app either through the Google Play Store or by downloading the APK directly from our website. The app requires Android 5.0 or higher.</span>
+                            <span class="burmese-text hidden burmese">အက်ပ်ကို Google Play Store မှတစ်ဆင့်ဖြစ်စေ၊ ကျွန်ုပ်တို့၏ဝဘ်ဆိုက်မှ APK ကိုတိုက်ရိုက်ဒေါင်းလုပ်လုပ်ခြင်းဖြင့်ဖြစ်စေ တပ်ဆင်နိုင်ပါသည်။ အက်ပ်သည် Android 5.0 သို့မဟုတ်အထက်လိုအပ်သည်။</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">What information do I need to collect for heritage documentation?</span>
+                        <span class="burmese-text hidden burmese">အမွေအနှစ်မှတ်တမ်းတင်ရန်အတွက် မည်သည့်အချက်အလက်များကိုစုဆောင်းရမည်နည်း။</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">The app will guide you through collecting photos, GPS coordinates, condition assessments, and basic information about the site. Refer to the Safety Protocol document for detailed requirements.</span>
+                            <span class="burmese-text hidden burmese">အက်ပ်သည် ဓာတ်ပုံများ၊ GPS ကိုဩဒိနိတ်များ၊ အခြေအနေအကဲဖြတ်ချက်များနှင့် နေရာအကြောင်းအခြေခံအချက်အလက်များကိုစုဆောင်းရာတွင် သင့်အားလမ်းညွှန်ပေးပါမည်။ အသေးစိတ်လိုအပ်ချက်များအတွက် လုံခြုံရေးစည်းမျဉ်းစာရွက်ကိုကြည့်ပါ။</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">How do I submit my collected data?</span>
+                        <span class="burmese-text hidden burmese">စုဆောင်းထားသောဒေတာများကိုမည်သို့တင်သွင်းရမည်နည်း။</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">The app can automatically submit data when you have internet connection. Alternatively, you can export the forms and send them to us via email or submit through our web form.</span>
+                            <span class="burmese-text hidden burmese">အက်ပ်သည် သင့်တွင် အင်တာနက်ချိတ်ဆက်မှုရှိပါက ဒေတာများကိုအလိုအလျောက်တင်သွင်းနိုင်သည်။ သို့မဟုတ် ဖောင်များကိုတင်ပို့ပြီး အီးမေးလ်မှတစ်ဆင့်ကျွန်ုပ်တို့ထံပေးပို့နိုင်သည် သို့မဟုတ် ကျွန်ုပ်တို့၏ဝဘ်ဖောင်မှတစ်ဆင့်တင်သွင်းနိုင်သည်။</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">What are the eligibility requirements for applying?</span>
+                        <span class="burmese-text hidden burmese">လျှောက်ထားရန်အရည်အချင်းလိုအပ်ချက်များကဘာတွေလဲ။</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">Please refer to the Application Policy document for complete eligibility requirements. Generally, we accept applications from local communities, heritage professionals, and organizations working in heritage preservation.</span>
+                            <span class="burmese-text hidden burmese">ပြည့်စုံသောအရည်အချင်းလိုအပ်ချက်များအတွက် လျှောက်လွှာမူဝါဒစာရွက်ကိုကြည့်ပါ။ ယေဘုယျအားဖြင့်၊ ကျွန်ုပ်တို့သည် ဒေသခံအသိုင်းအဝိုင်းများ၊ အမွေအနှစ်ကျွမ်းကျင်သူများနှင့် အမွေအနှစ်ထိန်းသိမ်းရေးတွင်လုပ်ဆောင်နေသောအဖွဲ့အစည်းများမှလျှောက်လွှာများကိုလက်ခံပါသည်။</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">How can I get technical support for the app?</span>
+                        <span class="burmese-text hidden burmese">အက်ပ်အတွက်နည်းပညာအထောက်အပံ့ကိုမည်သို့ရရှိနိုင်မည်နည်း။</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">For technical issues with the app, please email support@heritageformyanmar.org with details of your problem and screenshots if possible. We also provide training sessions - check our website for upcoming dates.</span>
+                            <span class="burmese-text hidden burmese">အက်ပ်နှင့်ပတ်သက်သောနည်းပညာဆိုင်ရာပြဿနာများအတွက် သင့်ပြဿနာအသေးစိတ်နှင့် ဖြစ်နိုင်ပါက screen shot များကို support@heritageformyanmar.org သို့အီးမေးလ်ပေးပို့ပါ။ ကျွန်ုပ်တို့သည် လေ့ကျင့်ရေးဆက်တင်များကိုလည်းပေးပါသည် - လာမည့်ရက်စွဲများအတွက် ကျွန်ုပ်တို့၏ဝဘ်ဆိုက်ကိုကြည့်ပါ။</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -464,6 +744,10 @@
                             <span class="english-text">Get Involved</span>
                             <span class="burmese-text hidden burmese">ပါဝင်ဆောင်ရွက်ပါ</span>
                         </a></li>
+                        <li><a href="#faq" class="text-[#CCCCCC] hover:text-white transition">
+                            <span class="english-text">FAQ</span>
+                            <span class="burmese-text hidden burmese">အမေးများသောမေးခွန်းများ</span>
+                        </a></li>
                     </ul>
                 </div>
                 
@@ -557,6 +841,17 @@
         
         window.addEventListener('scroll', checkIfInView);
         window.addEventListener('load', checkIfInView);
+        
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('active');
+                icon.classList.toggle('rotate-180');
+            });
+        });
     </script>
-</body
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=kokoye2007/heritageformyanmar" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
