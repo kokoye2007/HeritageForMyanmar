@@ -157,6 +157,78 @@
             max-height: 500px;
             padding-top: 1rem;
         }
+
+        /* Privacy Policy Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 30px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .privacy-policy-content {
+            line-height: 1.6;
+        }
+        
+        .privacy-policy-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .privacy-policy-content h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .privacy-policy-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .privacy-policy-content ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        
+        .privacy-policy-content li {
+            margin-bottom: 0.5rem;
+        }
         
         @media (max-width: 768px) {
             .language-toggle {
@@ -168,6 +240,12 @@
             
             .app-badge {
                 height: 40px;
+            }
+            
+            .modal-content {
+                width: 90%;
+                margin: 10% auto;
+                padding: 20px;
             }
         }
     </style>
@@ -185,11 +263,11 @@
         <div class="text-center px-4">
             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-on-scroll">
                 <span class="english-text">Rescue Myanmar's Heritage</span>
-                <span class="burmese-text hidden burmese">မြန်မာ့အမွေအနှစ်များကိုကယ်တင်ပါ</span>
+                <span class="burmese-text hidden burmese">မြန်မာ့အမွေအနှစ်များကိုကယ်�တင်ပါ</span>
             </h1>
             <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto animate-on-scroll" style="animation-delay: 0.2s;">
                 <span class="english-text">Documenting, protecting, and restoring cultural heritage at risk</span>
-                <span class="burmese-text hidden burmese">အန္တရာယ်ရှိသောယဉ်ကျေးမှုအမွေအနှစ်များကိုမှတ်တမ်းတင်၊ ကာကွယ်နှင့်ပြန်လည်ပြုပြင်ခြင်း</span>
+                <span class="burmese-text hidden burmese">အန္တရာ�ယ်ရှိသောယဉ်ကျေးမှုအမွေအနှစ်များကိုမှတ်တမ်းတင်၊ ကာကွယ်နှင့်ပြန်လည်ပြုပြင်ခြင်း</span>
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center animate-on-scroll" style="animation-delay: 0.4s;">
                 <a href="#involved" class="btn-highlight font-bold py-3 px-6 rounded-lg">
@@ -231,7 +309,7 @@
                 <!-- Our Mission Block -->
                 <a href="#mission" class="nav-block bg-[#F9F5EF] p-8 rounded-xl shadow-md hover:shadow-lg animate-on-scroll" style="animation-delay: 0.2s;">
                     <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background-color: rgba(212, 175, 55, 0.1);">
-                        <i class="fas fa-bullseye text-3xl text-[#D4AF37]"></i>
+                        <i class="fas fa-bullse-eye text-3xl text-[#D4AF37]"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-4 text-[#333333]">
                         <span class="english-text">Our Mission</span>
@@ -282,7 +360,7 @@
                     </h2>
                     <p class="mb-4 text-[#555555]">
                         <span class="english-text">Heritage for Myanmar (HFM) is a rapid response initiative dedicated to protecting Myanmar's cultural heritage during times of crisis. Our network of trained responders works with local communities to document damage, stabilize at-risk sites, and prepare for restoration when conditions allow. Through collaborative efforts, we aim to preserve Myanmar's rich cultural legacy for future generations while supporting communities in their recovery journey. </span>
-                        <span class="burmese-text hidden burmese">မြန်မာ့အမွေအနှစ် (Heritage for Myanmar - HFM) သည် အကျပ်အတည်းကာလများတွင် မြန်မာ့ယဉ်ကျေးမှုအမွေအနှစ်များကို ကာကွယ်ရန် အလျင်အမြန်တုံ့ပြန်ဆောင်ရွက်သော အစီအစဉ်တစ်ခုဖြစ်ပါသည်။ ကျွန်ုပ်တို့၏ လေ့ကျင့်ထားသော တုံ့ပြန်ဆောင်ရွက်သူများကွန်ရက်သည် ဒေသခံအသိုင်းအဝိုင်းများနှင့်အတူ ပျက်စီးမှုများကို မှတ်တမ်းတင်ခြင်း၊ အန္တရာယ်ရှိသော နေရာများကို တည်ငြိမ်စေခြင်းနှင့် အခြေအနေများက ခွင့်ပြုသည့်အခါ ပြန်လည်ထိန်းသိမ်းရန် ပြင်ဆင်ခြင်းတို့ကို ဆောင်ရွက်ပါသည်။ ပူးပေါင်းဆောင်ရွက်မှုများမှတဆင့်၊ ကျွန်ုပ်တို့သည် အသိုင်းအဝိုင်းများ၏ ပြန်လည်ထူထောင်ရေးခရီးစဉ်ကို ကူညီပံ့ပိုးပေးရင်း မြန်မာ့ကြွယ်ဝသော ယဉ်ကျေးမှုအမွေအနှစ်�ကို နောင်လာမည့် မျိုးဆက်များအတွက် ထိန်းသိမ်းသွားရန် ရည်ရွယ်ပါသည်။</span>
+                        <span class="burmese-text hidden burmese">မြန်မာ့အမွေအနှစ် (Heritage for Myanmar - HFM) သည် အကျပ်အတည်းကာလများတွင် မြန်မာ့ယဉ်ကျေးမှုအမွေအနှစ်များကို ကာကွယ်ရန် အလျင်အမြန်တုံ့ပြန်ဆောင်ရွက်သော အစီအစဉ်တစ်ခုဖြစ်ပါသည်။ ကျွန်ုပ်တို့၏ လေ့ကျင့်ထားသော တုံ့ပြန်ဆောင်ရွက်သူများကွန်ရက်သည် ဒေသခံအသိုင်းအဝိုင်းများနှင့်အတူ ပျက်စီးမှုများကို မှတ်တမ်းတင်ခြင်း၊ အန္တရာယ်ရှိသော နေရာများကို တည်ငြိမ်စေခြင်းနှင့် အခြေအနေများက ခွင့်ပြုသည့်အခါ ပြန်�လည်ထိန်းသိမ်းရန် ပြင်ဆင်ခြင်းတို့ကို ဆောင်ရွက်ပါသည်။ ပူးပေါင်းဆောင်ရွက်မှုများမှတဆင့်၊ ကျွန်ုပ်တို့သည် အသိုင်းအဝိုင်းများ၏ ပြန်လည်ထူထောင်ရေးခရီးစဉ်ကို ကူညီပံ့ပိုးပေးရင်း မြန်မာ့ကြွယ်ဝသော ယဉ်ကျေးမှုအမွေအနှစ်�ကို နောင်လာမည့် မျိုးဆက်များအတွက် ထိန်းသိမ်းသွားရန် ရည်ရွယ်ပါသည်။</span>
                     </p>
                     <p class="mb-6 text-[#555555]">
                         <span class="english-text">Our network of trained responders works with local communities to document damage, stabilize at-risk sites, and prepare for restoration when conditions allow.</span>
@@ -389,7 +467,7 @@
                         <span class="english-text">Guidelines for safe documentation and protection of heritage sites</span>
                         <span class="burmese-text hidden burmese">အမွေအနှစ်နေရာများ၏လုံခြုံစွာမှတ်တမ်းတင်ခြင်းနှင့်ကာကွယ်ခြင်းအတွက်လမ်းညွှန်ချက်များ</span>
                     </p>
-                    <a href="Safety-Protocol-Burmese.pdf" download class="btn-highlight font-bold py-3 px-6 rounded-lg block text-center">
+                    <a href="./pdf/Safety-Protocol-Burmese.pdf" download class="btn-highlight font-bold py-3 px-6 rounded-lg block text-center">
                         <span class="english-text">Download PDF</span>
                         <span class="burmese-text hidden burmese">PDF ဒေါင်းလုပ်လုပ်ပါ</span>
                     </a>
@@ -402,13 +480,13 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2 text-center text-[#333333]">
                         <span class="english-text">Application Guideline</span>
-                        <span class="burmese-text hidden burmese">လျှောက်လွှာလမ်းညွှန်</span>
+                        <span class="burmese-text hidden burmese">အသုံးပြုပုံ လမ်းညွှန်</span>
                     </h3>
                     <p class="mb-4 text-[#555555] text-center">
                         <span class="english-text">Step-by-step instructions for submitting applications</span>
-                        <span class="burmese-text hidden burmese">လျှောက်လွှာများတင်သွင်းရန်အဆင့်ဆင့်ညွှန်ကြားချက်များ</span>
+                        <span class="burmese-text hidden burmese">ဒေတာဖြည့်သွင်းပေးပို့ခြင်းအတွက် အဆင့်ဆင့်ညွှန်ကြားချက်များ</span>
                     </p>
-                    <a href="MAA-Application-guideline.pdf" download class="btn-primary font-bold py-3 px-6 rounded-lg block text-center">
+                    <a href="./pdf/MAA-Application-guideline.pdf" download class="btn-primary font-bold py-3 px-6 rounded-lg block text-center">
                         <span class="english-text">Download PDF</span>
                         <span class="burmese-text hidden burmese">PDF ဒေါင်းလုပ်လုပ်ပါ</span>
                     </a>
@@ -421,13 +499,13 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2 text-center text-[#333333]">
                         <span class="english-text">Application Policy</span>
-                        <span class="burmese-text hidden burmese">လျှောက်လွှာမူဝါဒ</span>
+                        <span class="burmese-text hidden burmese">ဆော့ဝဲ့နှင့် သက်ဆိုင်ရာ မူဝါဒ</span>
                     </h3>
                     <p class="mb-4 text-[#555555] text-center">
                         <span class="english-text">Official policies and requirements for applications</span>
-                        <span class="burmese-text hidden burmese">လျှောက်လွှာများအတွက်တရားဝင်မူဝါဒများနှင့်လိုအပ်ချက်များ</span>
+                        <span class="burmese-text hidden burmese">ဆော့ဝဲ့ တရားဝင်မူဝါဒများနှင့်လိုအပ်ချက်များ</span>
                     </p>
-                    <a href="Application-policy-Burmese.pdf" download class="btn-links font-bold py-3 px-6 rounded-lg block text-center">
+                    <a href="./pdf/Application-policy-Burmese.pdf" download class="btn-links font-bold py-3 px-6 rounded-lg block text-center">
                         <span class="english-text">Download PDF</span>
                         <span class="burmese-text hidden burmese">PDF ဒေါင်းလုပ်လုပ်ပါ</span>
                     </a>
@@ -577,7 +655,7 @@
                     <div class="faq-answer">
                         <p class="text-[#555555]">
                             <span class="english-text">Please refer to the Application Policy document for complete eligibility requirements. Generally, we accept applications from local communities, heritage professionals, and organizations working in heritage preservation.</span>
-                            <span class="burmese-text hidden burmese">ပြည့်စုံသောအရည်အချင်းလိုအပ်ချက်များအတွက် လျှောက်လွှာမူဝါဒစာရွက်ကိုကြည့်ပါ။ ယေဘုယျအားဖြင့်၊ ကျွန်ုပ်တို့သည် ဒေသခံအသိုင်းအဝိုင်းများ၊ အမွေအနှစ်ကျွမ်းကျင်သူများနှင့် အမွေအနှစ်ထိန်းသိမ်းရေးတွင်လုပ်ဆောင်နေသောအဖွဲ့အစည်းများမှလျှောက်လွှာများကိုလက်ခံပါသည်။</span>
+                            <span class="burmese-text hidden burmese">ပြည့်စုံသောအရည်အချင်းလိုအပ်ချက်များအတွက် ဆော့ဝဲမူဝါဒစာရွက်ကိုကြည့်ပါ။ ယေဘုယျအားဖြင့်၊ ကျွန်ုပ်တို့သည် ဒေသခံအသိုင်းအဝိုင်းများ၊ အမွေအနှစ်ကျွမ်းကျင်သူများနှင့် အမွေအနှစ်ထိန်းသိမ်းရေးတွင်လုပ်ဆောင်နေသောအဖွဲ့အစည်းများမှလျှောက်လွှာများကိုလက်ခံပါသည်။</span>
                         </p>
                     </div>
                 </div>
@@ -599,7 +677,7 @@
             </div>
         </div>
     </section>
-
+    
     <!-- Get Involved Section -->
     <section id="involved" class="py-16 bg-[#F9F5EF] section-border">
         <div class="container mx-auto px-4">
@@ -675,8 +753,156 @@
         </div>
     </section>
 
-    <!-- Impact Section -->
+
     <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 animate-on-scroll text-[var(--primary)]">
+                <span class="english-text">Privacy Policy</span>
+                <span class="burmese-text hidden burmese">ကိုယ်ရေးကိုယ်တာမူဝါဒ</span>
+            </h2>
+
+            <div class="space-y-6 animate-on-scroll">
+                <!-- Last Updated -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">Last updated: 09-APR-2025</span>
+                        <span class="burmese-text hidden burmese">နောက်ဆုံးမွမ်းမံမှု - 09-APR-2025</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">HFM - Rescue Myanmar's Heritage ("we", "us", or "our") respects your privacy. This policy explains how we handle information through our digital platforms.</span>
+                            <span class="burmese-text hidden burmese">HFM - Rescue Myanmar's Heritage ("ကျွန်ုပ်တို့") သည် သင့်ကိုယ်ရေးကိုယ်တာကို လေးစားပါသည်။ ဤမူဝါဒတွင် ကျွန်ုပ်တို့၏ဒီဂျစ်တယ်ပလက်ဖောင်းများမှ အချက်အလက်များကို မည်သို့ကိုင်တွယ်သည်ကို ရှင်းပြထားပါသည်။</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Information Collection -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">Information We Collect</span>
+                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့ စုဆောင်းသော အချက်အလက်များ</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ul class="list-disc pl-5 space-y-2 text-[#555555]">
+                            <li>
+                                <span class="english-text">Basic account information (name, email when you register)</span>
+                                <span class="burmese-text hidden burmese">အခြေခံအကောင့်အချက်အလက်များ (အမည်၊ အီးမေးလ် - မှတ်ပုံတင်သည့်အခါ)</span>
+                            </li>
+                            <li>
+                                <span class="english-text">Technical data (IP address, device type, browser version)</span>
+                                <span class="burmese-text hidden burmese">နည်းပညာဆိုင်ရာဒေတာ (IP လိပ်စာ၊ ကိရိယာအမျိုးအစား၊ ဘရောက်ဆာအဆင့်)</span>
+                            </li>
+                            <li>
+                                <span class="english-text">Usage patterns (features accessed, time spent)</span>
+                                <span class="burmese-text hidden burmese">အသုံးပြုမှုပုံစံများ (အသုံးပြုသည့်လုပ်ဆောင်ချက်များ၊ သုံးစွဲသည့်အချိန်)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Usage -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">How We Use Information</span>
+                        <span class="burmese-text hidden burmese">အချက်အလက်များကို အသုံးပြုပုံ</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ul class="list-disc pl-5 space-y-2 text-[#555555]">
+                            <li>
+                                <span class="english-text">To provide and improve our heritage preservation services</span>
+                                <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့၏အမွေအနှစ်ထိန်းသိမ်းရေးဝန်ဆောင်မှုများကို ပေးအပ်ရန်နှင့် မြှင့်တင်ရန်</span>
+                            </li>
+                            <li>
+                                <span class="english-text">To communicate important updates about Myanmar's heritage</span>
+                                <span class="burmese-text hidden burmese">မြန်မာ့အမွေအနှစ်ဆိုင်ရာ အရေးကြီးသောအပ်ဒိတ်များကို ဆက်သွယ်ရန်</span>
+                            </li>
+                            <li>
+                                <span class="english-text">To analyze usage for platform improvements</span>
+                                <span class="burmese-text hidden burmese">ပလက်ဖောင်းတိုးတက်ရေးအတွက် အသုံးပြုမှုကို ဆန်းစစ်ရန်</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Protection -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">Data Protection</span>
+                        <span class="burmese-text hidden burmese">အချက်အလက် ကာကွယ်မှု</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">We implement industry-standard security measures including encryption and access controls. However, no digital transmission is 100% secure.</span>
+                            <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့သည် encryption နှင့် အသုံးပြုခွင့်ထိန်းချုပ်မှုများအပါအဝင် စံချိန်စံညွှန်းမီ လုံခြုံရေးအစီအမံများကို အကောင်အထည်ဖော်ထားပါသည်။ သို့သော် ဒီဂျစ်တယ်အချက်အလက်လွှဲပြောင်းမှုများသည် 100% လုံခြုံမှုမရှိပါ။</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Third Parties -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">Third-Party Services</span>
+                        <span class="burmese-text hidden burmese">တတိယပါတီဝန်ဆောင်မှုများ</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">We use Google Analytics for usage statistics. These services have their own privacy policies which we recommend reviewing.</span>
+                            <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့သည် အသုံးပြုမှုစာရင်းဇယားများအတွက် Google Analytics ကိုအသုံးပြုပါသည်။ ဤဝန်ဆောင်မှုများတွင် ၎င်းတို့၏ကိုယ်ပိုင်ကိုယ်ရေးကိုယ်တာမူဝါဒများရှိပြီး သုံးသပ်ရန် အကြံပြုအပ်ပါသည်။</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Your Rights -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">Your Rights</span>
+                        <span class="burmese-text hidden burmese">သင့်အခွင့်အရေးများ</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <ul class="list-disc pl-5 space-y-2 text-[#555555]">
+                            <li>
+                                <span class="english-text">Request access to your personal data</span>
+                                <span class="burmese-text hidden burmese">သင့်ကိုယ်ရေးကိုယ်တာအချက်အလက်များကို ဝင်ရောက်ကြည့်ရှုရန် တောင်းဆိုနိုင်ပါသည်</span>
+                            </li>
+                            <li>
+                                <span class="english-text">Request correction of inaccurate information</span>
+                                <span class="burmese-text hidden burmese">မှားယွင်းနေသောအချက်အလက်များကို ပြင်ဆင်ရန် တောင်းဆိုနိုင်ပါသည်</span>
+                            </li>
+                            <li>
+                                <span class="english-text">Withdraw consent for data processing</span>
+                                <span class="burmese-text hidden burmese">အချက်အလက်များကို ကိုင်တွယ်ခြင်းအတွက် သဘောတူညီချက်ကို ရုပ်သိမ်းနိုင်ပါသည်</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span class="english-text">Contact Us</span>
+                        <span class="burmese-text hidden burmese">ဆက်သွယ်ရန်</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p class="text-[#555555]">
+                            <span class="english-text">For privacy concerns: <a href="mailto:privacy@rescuemyanmarheritage.org" class="text-[var(--links)]">privacy@rescuemyanmarheritage.org</a></span>
+                            <span class="burmese-text hidden burmese">ကိုယ်ရေးကိုယ်တာဆိုင်ရာ စိုးရိမ်ပူပန်မှုများအတွက် - <a href="mailto:privacy@rescuemyanmarheritage.org" class="text-[var(--links)]">privacy@rescuemyanmarheritage.org</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Impact Section -->
+    <section class="py-16 bg-[#F9F5EF]">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 animate-on-scroll">
                 <span class="english-text">Our Impact</span>
@@ -748,6 +974,10 @@
                             <span class="english-text">FAQ</span>
                             <span class="burmese-text hidden burmese">အမေးများသောမေးခွန်းများ</span>
                         </a></li>
+                        <li><a href="#privacy-policy" class="text-[#CCCCCC] hover:text-white transition">
+                            <span class="english-text">Privacy Policy</span>
+                            <span class="burmese-text hidden burmese">တကိုယ်ရည် လုံခြုံရေး</span>
+                        </a></li>
                     </ul>
                 </div>
                 
@@ -778,7 +1008,7 @@
                 <div class="animate-on-scroll" style="animation-delay: 0.6s;">
                     <h3 class="text-xl font-bold mb-4">
                         <span class="english-text">Follow Us</span>
-                        <span class="burmese-text hidden burmese">ကျွန်ုပ်တို့ကိုလိုက်ပါ</span>
+                        <span class="burmese-text hidden burmese">စောင့်ကြည့်လေ့လာပါ</span>
                     </h3>
                     <div class="flex gap-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-[#555555] hover:bg-[#2E8B57] transition flex items-center justify-center">
@@ -799,8 +1029,8 @@
             
             <div class="border-t border-[#555555] mt-8 pt-8 text-center text-[#999999] animate-on-scroll">
                 <p>
-                    <span class="english-text">© 2023 Heritage First Myanmar. All rights reserved.</span>
-                    <span class="burmese-text hidden burmese">© ၂၀၂၃ Heritage First Myanmar။ အခွင့်အရေးအားလုံးရရှိပြီး။</span>
+                    <span class="english-text">© 2025 Heritage First Myanmar. All rights reserved.</span>
+                    <span class="burmese-text hidden burmese">© ၂၀၂၅ Heritage First Myanmar။ အခွင့်အရေးအားလုံးရရှိပြီး။</span>
                 </p>
             </div>
         </div>
@@ -853,5 +1083,5 @@
             });
         });
     </script>
-  </body>
+  <p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=kokoye2007/heritageformyanmar" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
